@@ -6,6 +6,7 @@
      <link rel="stylesheet" href="style.css"/>
     </head>
     <body>
+        <header class="header">
         <nav class="navbar">
             <a href="index.html" class="logo" style="background-color: rgb(228, 190, 142); border:0.1px solid rgb(228, 190, 142);;"><svg viewBox="92 96 328 328" width="40" height="40" role="img" aria-label="Quizzler Logo">
         <defs>
@@ -69,17 +70,56 @@
       
             </ul>
         </nav>
+        </header>
 <br>
-        <div class="quiz-box">
-            <div class="quiz-top">
-                <span id="progress">Question 1 of 3</span>
-                <span id="score-display">Score: 0</span>
-            </div>
+      <main class="quiz-page">
 
-            <h2 id="question-text">Question</h2>
-            <div id="options-container" class="options"></div>
-            <button id="next-btn" disabled>Next Question</button>
-        </div>
+<!--Live lifetime rank bar-->
+
+        <div class="rank-hud">
+      <span>Rank: <strong id="hud-rank">NPC</strong></span>
+      <span>Total Correct: <strong id="hud-correct">0</strong></span>
+      <span>Win Rate: <strong id="hud-winrate">0%</strong></span>
+    </div>
+
+   <!-- Round Length Selector--> 
+    <div class="round-modes" id="round-modes">
+      <button class="mode-btn active" data-count="10">Quick 10</button>
+      <button class="mode-btn" data-count="25">25 Questions</button>
+      <button class="mode-btn" data-count="100">Full 100 Grind</button>
+    </div>
+
+    <!--Active Question Box-->
+    <div class="quiz-box" id="quiz-box">
+        <div class="quiz-top">
+        <span id="progress">Question 1 of 10</span>
+        <span>Round Score: <strong id="score-display">0</strong> | <strong id="streak-display">0</strong></span> 
+      </div>
+      <h2 id="question-text">Loading question...</h2>
+
+      <div id="options-container" class="options"></div>
+
+      <div class="quiz-bottom">
+        <p id="rizz-line" class="rizz-line">Lock in your answer.</p>
+        <button id="next-btn" disabled>Next Question →</button>
+      </div>
+    </div>
+
+    <!--End of the round Summary-->
+    <div class="quiz-box hidden" id="result-box">
+        <h2>Round Complete!</h2>
+        <p class="final-text">You got <strong id="final-score">0</strong> out of <strong id="final-total">10</strong> right.</p>
+      <p id="rank-status-msg" class="rizz-line"></p>
+      <div class="result-actions">
+        <button id="play-again-btn" class="action-btn">Play Another Round ↻</button>
+        <a href="ranks.html" class="action-btn secondary">View All 5 Ranks</a>
+      </div>
+    </div>
+<!--Load Qn Bank and Rank Tracker-->
+    </main>
         <script src="quiz.js"></script>
+        <script src="ranks.js"></script>  
+        <script src="quiz.js"></script>
+
     </body>
-</html>
+</html>   

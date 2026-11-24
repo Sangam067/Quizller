@@ -156,3 +156,153 @@ body {
     font-size: 2.2rem;
   }
 }
+
+.quiz-page {
+  max-width: 600px;
+  margin: 36px auto;
+  padding: 0 20px;
+  font-family: sans-serif;
+}
+
+.rank-hud{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+  background-color: rgb(228, 190, 142);
+  border: 1.5px solid #352203;
+  padding: 12px 18px;
+  margin-bottom: 14px;
+  font-size: 0.95rem;
+}
+
+.round-modes {
+    display: flex;
+  gap: 10px;
+  margin-bottom: 18px;
+}
+
+.mode-btn{
+    padding:6px 14px;
+    border: 1.5px solid #352203;
+    background-color: rgba(228, 190, 142, 0.65);
+    color: #352203;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.mode-btn.active,
+.mode-btn:hover {
+  background-color: #352203;
+  color: #f5c874;
+}
+
+
+   .quiz-box {
+  background-color: rgba(255, 249, 238, 0.82);
+  border: 2px solid #352203;
+  box-shadow: 5px 5px 0px #352203;
+  padding: 28px;
+}
+
+.quiz-top {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 18px;
+  font-size: 0.9rem;
+}
+
+#question-text{
+    font-size: 1.4rem;
+    line-height: 1.35;
+    margin-bottom: 20px;
+}
+
+.options {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 22px;
+}
+
+.option-btn{
+  padding:13px 16px;
+  text-align: left;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #352203;
+  background-color: rgba(202, 178, 72, 0.35);
+  border: 1.5px solid #352203;
+  cursor: pointer;
+  transition: background-color 0.15s ease;
+}
+
+.option-btn:hover:not(:disabled) {
+  background-color: #fcf41a85;
+}
+
+.option-btn:disabled{
+    cursor:default;
+}
+
+.option-btn.wrong {
+  background-color: #c44d3d;
+  color: #fff9ee;
+  border-color: #4a1a13;
+}
+
+.quiz-bottom{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  padding-top: 14px;
+  border-top: 1px solid rgba(58, 38, 4, 0.293);
+}
+
+.rizz-line{
+  font-style: italic; 
+  font-size: 0.95rem;
+}
+ 
+#next-btn,
+.action-btn{
+  display: inline-block;
+  text-decoration: none;
+  padding: 10px 18px;
+  background-color: #352203;
+  color: #f5c874;
+  border: 1.5px solid #352203;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+#next-btn:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.action-btn.secondary{
+    background-color:rgba(202, 178, 72, 0.4);
+    color:#352203;
+}
+
+.final-text {
+  font-size: 1.2rem;
+  margin: 14px 0;
+}
+
+.result-actions{
+    display:flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 22px;
+}
+
+.hidden {
+  display: none;  
+}
+
