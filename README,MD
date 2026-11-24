@@ -1,0 +1,29 @@
+Hi! this is a geography guessing game. Here you can play geography quiz and spend a productive funtime.
+
+
+Here are the three main pages of this website:
+1) index.html: In this file there is a landing page. It tells about the website and features of this website, then gives link to the quiz game and the stats pannel.  What this page contains:
+1)Header containing the Quizzler    navigation bar
+2)Main area with title, description, and buttons
+3)Right-hand area containing the mascot
+4)Footer with some details of when this website was made
+
+2) quiz.html: In this file there is a quiz pannel in which the users can show their geography rizz by correctly guessing all the questions.What this page contains:
+1)Proper Navigation Bar
+2)Quiz Container
+3)Question Progress and Score 
+4)Options containing the answers
+5)Next question button
+ 
+
+3) stats.html: In this file there is a leaderboard where you can see the people with highest geography rizz.
+
+Structure of this website:
+It contains the following files with following structure:
+
+Quizzler/
+├── index.html       # Landing page
+├── quiz.html        # Geography quiz interface
+├── stats.html       # Stats and leaderboard page
+├── style.css        # Shared website styling (contains layout of the entire website)
+└── README,MD        # Project documentation

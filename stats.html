@@ -1,0 +1,73 @@
+<html>
+    <head>
+    <title>Quiz Page</title>
+    <link rel="stylesheet" href="style.css"/>
+    </head>
+    <body>
+<nav class="navbar">
+            <a href="index.html" class="logo" style="background-color: rgb(228, 190, 142); border:0.1px solid rgb(228, 190, 142);;"><svg viewBox="92 96 328 328" width="40" height="40" role="img" aria-label="Quizzler Logo">
+        <defs>
+          <clipPath id="globe-clip">
+            <circle cx="256" cy="264" r="148" />
+          </clipPath>
+
+          <mask id="grid-cutout">
+            <rect width="512" height="512" fill="white" />
+            <g fill="none" stroke="black" stroke-width="24" stroke-linecap="butt" stroke-linejoin="round">
+              <path d="M 182 236 C 182 189, 214 156, 256 156 C 298 156, 328 188, 328 228 C 328 275, 258 288, 258 322 L 258 338" />
+              <path d="M 204 236 C 204 203, 226 178, 256 178 C 286 178, 306 200, 306 228 C 306 261, 236 276, 236 322 L 236 338" />
+            </g>
+            <circle cx="247" cy="368" r="24" fill="black" />
+            <g transform="translate(345, 151) rotate(18)">
+              <path d="M 0 0 C 0 0, -16 -20, -16 -32 A 16 16 0 1 1 16 -32 C 16 -20, 0 0, 0 0 Z" fill="black" stroke="black" stroke-width="12" stroke-linejoin="round" />
+            </g>
+          </mask>
+        </defs>
+
+        <!-- Globe & Grid Lines -->
+        <g mask="url(#grid-cutout)" fill="none" stroke="#362f25" stroke-width="9" stroke-linecap="round">
+          <circle cx="256" cy="264" r="148" />
+          <g clip-path="url(#globe-clip)">
+            <line x1="108" y1="264" x2="404" y2="264" />
+            <line x1="256" y1="116" x2="256" y2="412" />
+            <ellipse cx="256" cy="264" rx="76" ry="148" />
+            <path d="M 140 175 Q 256 120 372 175" />
+            <path d="M 140 353 Q 256 408 372 353" />
+          </g>
+        </g>
+
+        <!-- Double-Line Question Mark -->
+        <g fill="none" stroke="#362f25" stroke-width="9" stroke-linecap="butt" stroke-linejoin="round">
+          <path d="M 182 236 C 182 189, 214 156, 256 156 C 298 156, 328 188, 328 228 C 328 275, 258 288, 258 322 L 258 336" />
+          <path d="M 204 236 C 204 203, 226 178, 256 178 C 286 178, 306 200, 306 228 C 306 261, 236 276, 236 322 L 236 336" />
+        </g>
+
+        <!-- Question Mark Dot -->
+        <circle cx="247" cy="368" r="16" fill="#362f25" />
+
+        <!-- Center Map Pin -->
+        <path
+          fill="#362f25"
+          fill-rule="evenodd"
+          d="M 252 258 C 252 258, 238 240, 238 228 A 14 14 0 1 1 266 228 C 266 240, 252 258, 252 258 Z M 252 223 A 5 5 0 1 0 252 233 A 5 5 0 1 0 252 223 Z"
+        />
+
+        <!-- Top-Right Perimeter Map Pin -->
+        <g transform="translate(345, 151) rotate(18)">
+          <path
+            fill="#362f25"
+            fill-rule="evenodd"
+            d="M 0 0 C 0 0, -16 -20, -16 -32 A 16 16 0 1 1 16 -32 C 16 -20, 0 0, 0 0 Z M 0 -38 A 6 6 0 1 0 0 -26 A 6 6 0 1 0 0 -38 Z"
+          />
+        </g>
+      </svg></a>
+            <ul class="nav-links">
+                 <li><a href="quiz.html">Quiz-Game</a></li>
+      <li><a href="stats.html">Stats and Leaderboard</a></li>
+      
+            </ul>
+        </nav>
+stats
+    </body>
+</html>
+
